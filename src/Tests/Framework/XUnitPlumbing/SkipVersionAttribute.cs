@@ -7,12 +7,12 @@ namespace Tests.Framework
 {
 	public class SkipVersionAttribute : Attribute
 	{
-		public IList<Range> Ranges { get; }
+		public IList<SemVer.Range> Ranges { get; }
 
 		public SkipVersionAttribute(string skipVersionRangesSeparatedByComma, string reason)
 		{
 			this.Ranges = skipVersionRangesSeparatedByComma.Split(',')
-				.Select(r => new Range(r))
+				.Select(r => new SemVer.Range(r))
 				.ToList();
 		}
 	}

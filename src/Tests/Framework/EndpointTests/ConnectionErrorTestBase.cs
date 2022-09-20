@@ -7,6 +7,8 @@ using Nest;
 using Tests.Framework.Integration;
 using Tests.Framework.ManagedElasticsearch.Clusters;
 
+#pragma warning disable xUnit1024
+
 namespace Tests.Framework
 {
 	public abstract class ConnectionErrorTestBase<TCluster>
