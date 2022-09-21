@@ -23,7 +23,11 @@ namespace Tests.Framework
 		public IEnumerable<IXunitTestCase> Discover(ITestFrameworkDiscoveryOptions discoveryOptions, ITestMethod testMethod, IAttributeInfo factAttribute) =>
 			!_condition || SkipMethod(discoveryOptions, testMethod, factAttribute)
 				? Enumerable.Empty<IXunitTestCase>()
-				: new[] { new XunitTestCase(DiagnosticMessageSink, discoveryOptions.MethodDisplayOrDefault(), testMethod) };
+				: new[] { new XunitTestCase(
+					DiagnosticMessageSink,
+					discoveryOptions.MethodDisplayOrDefault(),
+					TestMethodDisplayOptions.None,
+					testMethod) };
 
 	}
 }

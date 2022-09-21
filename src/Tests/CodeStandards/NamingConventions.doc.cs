@@ -154,8 +154,10 @@ namespace Tests.CodeStandards
 				typeof(AggregationVisitor),
 				typeof(IAggregationVisitor),
 				nestAssembly.GetType("System.AssemblyVersionInformation"),
+				nestAssembly.GetType("Microsoft.CodeAnalysis.EmbeddedAttribute"),
+				nestAssembly.GetType("System.Runtime.CompilerServices.NullableAttribute"),
+				nestAssembly.GetType("System.Runtime.CompilerServices.NullableContextAttribute"),
 #if DOTNETCORE
-				typeof(SynchronizedCollection<>),
 				nestAssembly.GetType("System.ComponentModel.Browsable")
 #endif
 			};

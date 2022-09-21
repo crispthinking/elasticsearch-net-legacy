@@ -1,0 +1,6 @@
+<Project>
+	<PropertyGroup>
+		<!-- We're only building the "DOTNETCORE" variant on this fork -->
+		<DefineConstants>$(DefineConstants);DOTNETCORE</DefineConstants>
+	</PropertyGroup>
+</Project>

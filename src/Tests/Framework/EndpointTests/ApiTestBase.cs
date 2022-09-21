@@ -129,6 +129,7 @@ namespace Tests.Framework
 					this._uniqueValues.CurrentView = kv.Key;
 					assert(response);
 				}
+#pragma warning disable CS8360
 #pragma warning disable 7095 //enable this if you expect a single overload to act up
 				catch (Exception ex) when (false)
 #pragma warning restore 7095

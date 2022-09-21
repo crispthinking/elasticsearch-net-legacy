@@ -1,33 +1,29 @@
 {
-	"version": "2.0.0",
-	"tasks": [
-		{
-			"type": "process",
-			"problemMatcher": [
-				"$msCompile"
-			],
-			"command": "dotnet",
-			"args": [
-				"build",
-				"/p:DotNetCoreOnly=1",
-				"src/Elasticsearch.DotNetCoreOnly.sln"
-			],
-			"group": "build",
-			"label": "Build: DotNetCoreOnly"
-		},
-		{
-			"type": "process",
-			"problemMatcher": [
-				"$msCompile"
-			],
-			"command": "dotnet",
-			"args": [
-				"test",
-				"/p:DotNetCoreOnly=1",
-				"src/Elasticsearch.DotNetCoreOnly.sln"
-			],
-			"group": "test",
-			"label": "Test: DotNetCoreOnly"
-		}
-	]
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "process",
+      "problemMatcher": [
+        "$msCompile"
+      ],
+      "command": "dotnet",
+      "args": [
+        "build"
+      ],
+      "group": "build",
+      "label": "dotnet build"
+    },
+    {
+      "type": "process",
+      "problemMatcher": [
+        "$msCompile"
+      ],
+      "command": "dotnet",
+      "args": [
+        "test"
+      ],
+      "group": "test",
+      "label": "dotnet test"
+    }
+  ]
 }
