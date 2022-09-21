@@ -17,7 +17,9 @@ pool:
 steps:
 - checkout: self
   fetchDepth: 2000
+  persistCredentials: true
 - script: |
+    git fetch --tags
     ./cibuild.sh
 - publish: $(System.DefaultWorkingDirectory)/artifacts
   artifact: Artifacts
