@@ -1,0 +1,8 @@
+mode: Mainline
+branches:
+  hotfix:
+    increment: Patch
+  feature:
+    increment: Patch
+  master:
+    regex: ^main$
