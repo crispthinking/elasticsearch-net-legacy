@@ -157,6 +157,7 @@ namespace Tests.CodeStandards
 				nestAssembly.GetType("Microsoft.CodeAnalysis.EmbeddedAttribute"),
 				nestAssembly.GetType("System.Runtime.CompilerServices.NullableAttribute"),
 				nestAssembly.GetType("System.Runtime.CompilerServices.NullableContextAttribute"),
+				nestAssembly.GetType("GitVersionInformation"),
 #if DOTNETCORE
 				nestAssembly.GetType("System.ComponentModel.Browsable")
 #endif
@@ -189,6 +190,7 @@ namespace Tests.CodeStandards
 				elasticsearchNetAssembly.GetType("Purify.Purifier+PurifierDotNet"),
 				elasticsearchNetAssembly.GetType("Purify.Purifier+PurifierMono"),
 				elasticsearchNetAssembly.GetType("Purify.Purifier+UriInfo"),
+				elasticsearchNetAssembly.GetType("GitVersionInformation"),
 #if DOTNETCORE
 				elasticsearchNetAssembly.GetType("System.ComponentModel.Browsable")
 #endif
