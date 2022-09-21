@@ -1,0 +1,22 @@
+
+trigger:
+  branches:
+    include:
+      - main
+      - 'develop'
+      - 'release/*'
+      - 'feature/*'
+      - 'hotfix/*'
+  tags:
+    include:
+      - 'v*'
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- script: |
+    ./cibuild.sh
+- publish: $(System.DefaultWorkingDirectory)/artifacts
+  artifact: Artifacts
+
